@@ -17,7 +17,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
-    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@fortawesome/react-fontawesome": "^0.2.6",
     "@tailwindcss/vite": "^4.1.8",
     "daisyui": "^5.0.40",
     "gh-pages": "^6.3.0",
@@ -42,6 +42,7 @@
     "vite": "^6.3.5"
   },
   "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.60.1",
     "lightningcss-linux-x64-gnu": "1.32.0"
   }
 }
