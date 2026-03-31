@@ -9,7 +9,7 @@ const Education = () => {
       type: "box",
       color: "black",
       strokeWidth: 2,
-      padding: 10,
+      padding: .5,
       iterations: 2,
       animate: true,
     });

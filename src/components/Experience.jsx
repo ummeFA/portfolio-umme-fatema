@@ -10,7 +10,7 @@ const Experience = () => {
       type: "box",
       color: "black",
       strokeWidth: 2,
-      padding: 10,
+      padding: .5,
       iterations: 2,
       animate: true,
     });
@@ -18,7 +18,7 @@ const Experience = () => {
       type: "box",
       color: "black",
       strokeWidth: 2,
-      padding: 10,
+      padding: .5,
       iterations: 2,
       animate: true,
     });
@@ -28,15 +28,17 @@ const Experience = () => {
 
   return (
     <div className="py-12 px-6" id="experience">
-      <h2 className="text-4xl font-bold text-center text-black mb-12 inline-block px-2 py-2 transition duration-300 hover:bg-[linear-gradient(transparent_60%,#f7bbe2_60%)]">
+      <div className="mb-6">
+        <h2 className="text-4xl font-bold text-black mb-6 inline-block px-2 py-2 transition duration-300 hover:bg-[linear-gradient(transparent_60%,#f7bbe2_60%)]">
         Experience
       </h2>
+      </div>
 
       <div className="flex flex-col md:flex-row justify-center items-start gap-12">
         {/* Card 1 */}
         <div
           ref={cardRef1}
-          className="w-full md:w-1/2 p-6 bg-transparent shadow-md rounded-md text-black"
+          className="w-full md:w-[560px] p-6 bg-transparent shadow-md rounded-md text-black"
         >
           <h3 className="text-3xl font-bold mb-2">株式会社 Ariake</h3>
           <h4 className="text-xl font-semibold mb-2">Kumamoto, Japan</h4>
@@ -49,7 +51,7 @@ const Experience = () => {
         {/* Card 2 */}
         <div
           ref={cardRef2}
-          className="w-full md:w-1/2 p-6 bg-transparent shadow-md rounded-md text-black"
+          className="w-full md:w-[560px] p-6 bg-transparent shadow-md rounded-md text-black"
         >
           <h3 className="text-3xl font-bold mb-2">
             Lankabangla Finance Limited

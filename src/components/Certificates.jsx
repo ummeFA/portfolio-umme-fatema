@@ -22,12 +22,12 @@ const Certificates = () => {
   }, []);
 
   return (
-    <section className="py-10">
-      <h2 className="text-4xl font-bold text-center text-black mb-12 inline-block px-2 transition duration-300 hover:bg-[linear-gradient(transparent_60%,#f7bbe2_60%)]">
+    <section className="py-12 px-6">
+      <h2 className="text-4xl font-bold text-black mb-6 inline-block px-2 py-2 transition duration-300 hover:bg-[linear-gradient(transparent_60%,#f7bbe2_60%)]">
         Certificates
       </h2>
 
-      <ul className="list-none ml-6 space-y-4 text-black">
+      <ul className="space-y-4 ml-2 text-black">
         <li>
           <a
             ref={cert1Ref}

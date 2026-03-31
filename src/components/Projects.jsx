@@ -4,21 +4,35 @@ import { annotate } from "rough-notation";
 const Projects = () => {
   const p1Ref = useRef(null);
   const p2Ref = useRef(null);
+  const p3Ref = useRef(null);
 
   useEffect(() => {
-    annotate(p1Ref.current, {
-      type: "underline",
-      color: "#f7bbe2",
-      strokeWidth: 3,
-      animate: true,
-    }).show();
+    const annotations = [
+      annotate(p1Ref.current, {
+        type: "underline",
+        color: "#f7bbe2",
+        strokeWidth: 3,
+        animate: true,
+      }),
+      annotate(p2Ref.current, {
+        type: "underline",
+        color: "#f7bbe2",
+        strokeWidth: 3,
+        animate: true,
+      }),
+      annotate(p3Ref.current, {
+        type: "underline",
+        color: "#f7bbe2",
+        strokeWidth: 3,
+        animate: true,
+      }),
+    ];
 
-    annotate(p2Ref.current, {
-      type: "underline",
-      color: "#f7bbe2",
-      strokeWidth: 3,
-      animate: true,
-    }).show();
+    annotations.forEach((a) => a.show());
+
+    return () => {
+      annotations.forEach((a) => a.remove());
+    };
   }, []);
 
   return (
@@ -37,7 +51,6 @@ const Projects = () => {
             className="relative z-10 font-medium hover:text-blue-600 transition"
           >
             Mental Health Text Classifier
-
           </a>
           <span className="ml-2 text-sm text-gray-600">(Python)</span>
         </li>
@@ -45,15 +58,31 @@ const Projects = () => {
         <li>
           <a
             ref={p2Ref}
+            href="https://github.com/ummeFA/satellite-image-identifier"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative z-10 font-medium hover:text-blue-600 transition"
+          >
+            Satellite Image Classification
+          </a>
+          <span className="ml-2 text-sm text-gray-600">
+            (Python, MobileNetV2 achieved 99.64% validation accuracy, Custom CNN achieved 94.49% validation accuracy)
+          </span>
+        </li>
+
+        <li>
+          <a
+            ref={p3Ref}
             href="https://github.com/ummeFA/bank-customer-churn-prediction"
             target="_blank"
             rel="noopener noreferrer"
             className="relative z-10 font-medium hover:text-blue-600 transition"
           >
             Bank Customer Churn Prediction
-
           </a>
-          <span className="ml-2 text-sm text-gray-600">(Python, pandas, scikit-learn, XGBoost, matplotlib)</span>
+          <span className="ml-2 text-sm text-gray-600">
+            (Python, pandas, scikit-learn, XGBoost, matplotlib)
+          </span>
         </li>
       </ul>
     </section>
