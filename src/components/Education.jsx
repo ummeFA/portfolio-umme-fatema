@@ -19,7 +19,7 @@ const Education = () => {
   return (
     <div
       id="education"
-      className="bg-[linear-gradient(to_right,rgba(0,0,0,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.05)_1px,transparent_1px)] bg-[length:20px_20px] bg-[#f9f9f7] py-12 px-6"
+      className="bg-[linear-gradient(to_right,rgba(0,0,0,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.05)_1px,transparent_1px)] bg-[length:20px_20px] bg-[#f9f9f7] py-12"
     >
       {/* Centered Heading */}
       <h2 className="text-4xl font-bold text-center text-black mb-12 inline-block px-2 py-2 transition duration-300 hover:bg-[linear-gradient(transparent_60%,#f7bbe2_60%)]">

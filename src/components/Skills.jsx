@@ -62,7 +62,7 @@ const Skills = () => {
   }, [hovered]);
 
   return (
-    <section id="skills" className="py-12 px-6 bg-transparent">
+    <section id="skills" className="py-12 px-.25 bg-transparent">
       <div className="mb-12">
         <h2 className="inline-block text-4xl font-bold text-black px-2 py-2 transition duration-300 hover:bg-[linear-gradient(transparent_60%,#f7bbe2_60%)]">
           Skills

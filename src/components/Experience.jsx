@@ -27,7 +27,7 @@ const Experience = () => {
   }, []);
 
   return (
-    <div className="py-12 px-6" id="experience">
+    <div className="py-12" id="experience">
       <div className="mb-6">
         <h2 className="text-4xl font-bold text-black mb-6 inline-block px-2 py-2 transition duration-300 hover:bg-[linear-gradient(transparent_60%,#f7bbe2_60%)]">
         Experience
