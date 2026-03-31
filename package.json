@@ -11,9 +11,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
+    "preview": "npm run build && wrangler dev",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
@@ -29,6 +29,7 @@
     "roughjs": "^4.6.6"
   },
   "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.30.2",
     "@eslint/js": "^9.25.0",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
@@ -40,7 +41,8 @@
     "globals": "^16.0.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.18",
-    "vite": "^6.3.5"
+    "vite": "^6.3.5",
+    "wrangler": "^4.78.0"
   },
   "optionalDependencies": {
     "lightningcss-linux-x64-gnu": "^1.30.1"
