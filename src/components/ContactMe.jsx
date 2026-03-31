@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 
-import leetcodeIcon from "../../public/images/leetcode.svg";
+import leetcodeIcon from "/images/leetcode.svg";
 
 const ContactMe = () => {
   return (

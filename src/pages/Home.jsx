@@ -7,7 +7,7 @@ import ContactMe from "../components/ContactMe";
 import Footer from "../components/Footer";
 import Skills from "../components/Skills";
 import { useEffect, useState } from "react";
-import scrollTopIcon from "../../public/images/top-arrow.svg";
+import scrollTopIcon from "/images/top-arrow.svg";
 import Certificates from "../components/Certificates";
 
 const Home = () => {
